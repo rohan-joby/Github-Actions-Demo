@@ -1,7 +1,7 @@
 name: Step Outputs
 on: workflow_dispatch
 jobs:
-  jobOne
+  jobOne:
     name: First Job to try out step outputs
     runs-on: ubuntu-latest
     steps:
