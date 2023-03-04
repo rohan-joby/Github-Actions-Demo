@@ -1,6 +1,7 @@
 name: Step Outputs
 on: 
   - workflow_dispatch
+  - push
 jobs:
   jobOne:
     name: First Job to try out step outputs
