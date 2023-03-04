@@ -9,7 +9,7 @@ jobs:
     steps:
       - name: Set branch output to variable
         id: branch-name
-        run: echo 'stage=${GITHUB_REF#ref/*/}' >> GITHUB_OUTPUT
+        run: echo 'stage=${GITHUB_REF#ref/*/}' >> $GITHUB_OUTPUT
 
       - name: Access outputs
         run: echo "${{toJSON(steps)}}"
